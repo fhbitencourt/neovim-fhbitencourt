@@ -3,12 +3,14 @@ vim.lsp.config("lua_ls", require("lsp.lua_ls"))
 vim.lsp.config("pyright", require("lsp.pyright"))
 vim.lsp.config("clangd", require("lsp.clangd"))
 vim.lsp.config("texlab", require("lsp.texlab"))
+vim.lsp.config("marksman", require("lsp.marksman"))
 
 vim.lsp.enable({
     "lua_ls",
     "pyright",
     "clangd",
-    "texlab"
+    "texlab",
+    "marksman"
 })
 
 vim.diagnostic.config({
