@@ -1,4 +1,6 @@
-# LSPs disponíveis:
+# NEOVIM for computer science
+
+### LSPs disponíveis:
     - markdown -> marksman
     - c, c++, obj c, objcpp, cuda -> clangd
     - python -> pyright 
