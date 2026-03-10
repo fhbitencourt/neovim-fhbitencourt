@@ -1,6 +1,6 @@
 # LSPs disponíveis:
     - markdown -> marksman
-    - c, c++, objective c, c3 -> clangd
+    - c, c++, obj c, objcpp, cuda -> clangd
     - python -> pyright 
     - latex -> texlab
     - assembly -> asm_lsp
