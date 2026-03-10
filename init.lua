@@ -5,6 +5,7 @@ require("core.markdown")
 require("core.templates")
 require("core.yazi")
 require("config.lazy")
+require("core.lsp")
 
 require("lazy").setup({
   spec = {
@@ -15,11 +16,9 @@ require("lazy").setup({
 })
 
 local cache_path = vim.g.base46_cache
-local ok, _ = pcall(vim.fn.readdir, cache_path)
 
-if ok then
+if vim.fn.isdirectory(cache_path) == 1 then
   for _, v in ipairs(vim.fn.readdir(cache_path)) do
     dofile(cache_path .. v)
   end
 end
-

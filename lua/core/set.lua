@@ -21,6 +21,8 @@ vim.opt.signcolumn = "yes"
 vim.opt.isfname:append("@-@")
 vim.opt.colorcolumn = "120"
 
+vim.keymap.set('n', '<C-n>', '<Cmd>Neotree filesystem reveal left toggle<CR>')
+
 local indent_group = vim.api.nvim_create_augroup("CustomIndentation", { clear = true })
 
 -- Exceções para 4 espaços
@@ -46,9 +48,9 @@ vim.api.nvim_create_autocmd("FileType", {
 })
 
 -- Powermaps
-
 vim.keymap.set("v", "J", ":m '>+1<CR>gv=gv")
 vim.keymap.set("v", "K", ":m '<-2<CR>gv=gv")
+
 
 vim.api.nvim_set_keymap("n", "<leader>tf", "<Plug>PlenaryTestFile", { noremap = false, silent = false })
 
@@ -111,6 +113,4 @@ vim.keymap.set("n", "<leader>ca", function()
     require("cellular-automaton").start_animation("make_it_rain")
 end)
 
-vim.keymap.set("n", "<leader><leader>", function()
-    vim.cmd("so")
-end)
+
