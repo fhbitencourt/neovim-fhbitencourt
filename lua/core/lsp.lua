@@ -4,13 +4,21 @@ vim.lsp.config("pyright", require("lsp.pyright"))
 vim.lsp.config("clangd", require("lsp.clangd"))
 vim.lsp.config("texlab", require("lsp.texlab"))
 vim.lsp.config("marksman", require("lsp.marksman"))
+vim.lsp.config("asm_lsp", require("lsp.asm_lsp"))
+vim.lsp.config("bashls", require("lsp.bashls"))
+vim.lsp.config("java-language-server", require("lsp.java-language-server"))
+vim.lsp.config("julials", require("lsp.julials"))
+vim.lsp.config("nixd", require("lsp.nixd"))
 
 vim.lsp.enable({
     "lua_ls",
     "pyright",
     "clangd",
     "texlab",
-    "marksman"
+    "julials",
+    "marksman",
+    "nixd",
+    "java-language-server",
 })
 
 vim.diagnostic.config({

@@ -5,7 +5,6 @@ local i = ls.insert_node
 local fmta = require("luasnip.extras.fmt").fmta
 
 ls.add_snippets("markdown", {
-  
   -- Implica (=>)
   s({ trig = "=>" },
     { t("\\implies") }

@@ -20,3 +20,7 @@ vim.keymap.set('n', ',c', ':-1read $HOME/.config/nvim/lua/core/docs/.standard.c<
 
 -- Maratona
 vim.keymap.set('n', ',maratona', ':-1read $HOME/.config/nvim/lua/core/docs/.maratona.cpp<CR>', opts)
+
+
+-- bash
+vim.keymap.set('n', ',shebang', ':-1read $HOME/.config/nvim/lua/core/docs/.shebang.sh<CR>', opts)
