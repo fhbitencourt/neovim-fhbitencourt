@@ -8,5 +8,8 @@
     - assembly -> asm_lsp
     - bash -> bashls
     - lua -> lua_ls
+    - julia -> julials
+    - nix -> nixd
+    - java -> java-language-server
 
 
