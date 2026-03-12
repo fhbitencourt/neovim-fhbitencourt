@@ -1,4 +1,4 @@
-# NEOVIM for computer science
+# My NEOVIM for computer science
 
 ### LSPs disponíveis:
     - markdown -> marksman
